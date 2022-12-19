@@ -44,6 +44,30 @@ module.exports = {
                 ],
             },
             {
+                test: /\.less$/i,
+                use: [
+                    NODE_ENV === 'development'
+                        ? 'style-loader'
+                        : MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2,
+                            sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            sourceMap: true,
+                            lessOptions: {
+                                strictMath: true,
+                            },
+                        },
+                    },
+                ],
+            },
+            {
                 test: /\.(svg|png|jpe?g|gif)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {

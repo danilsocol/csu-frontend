@@ -1,14 +1,10 @@
 import React from 'react';
 
-import cat from '@Assets/images/cat.jpg';
-
+import Header from '@Components/Header/header.jsx';
 import './styles.css';
 
 const Main = () => (
-    <div className="main-page">
-        <h1 className="main-page__title">Главная</h1>
-        <img className="main-page__cat-img" src={cat} />
-    </div>
+    <Header/>
 );
 
 export default Main;

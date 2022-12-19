@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+}
+.header .header-block {
+  padding: 27px 135px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .sub-menu {
+  display: flex;
+  align-items: center;
+}
+.menu .sub-menu .pipe {
+  margin-left: 50px;
+  border-left: 1px solid #A9C5E0;
+  background: #A9C5E0;
+  height: 14px;
+  width: 0;
+}
+.menu .sub-menu .courier-service {
+  margin-left: 30px;
+  font-family: 'Proxima Nova';
+  font-size: 13px;
+  line-height: 21px;
+  color: #A9C5E0;
+}
+.menu .sub-menu .log-in-btn {
+  cursor: pointer;
+  background: transparent;
+  color: #E5E31F;
+  border: 1px solid #E5E31F;
+  border-radius: 10px;
+  width: 170px;
+  height: 52px;
+  font-size: 18px;
+}
+.menu .sub-menu .phone-link {
+  display: flex;
+  align-items: center;
+  font-family: 'Proxima Nova';
+  font-size: 13px;
+  line-height: 24px;
+  margin-right: 28px;
+  color: #A9C5E0;
+}
+.menu .sub-menu .phone-link .phone-text {
+  width: 146px;
+  margin-left: 12px;
+}
