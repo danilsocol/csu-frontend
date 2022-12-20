@@ -2,7 +2,7 @@ import Slide from '../models/slide';
 import car from '@Assets/images/s1.png';
 import board from '@Assets/images/s2.png';
 
-export default class Mock {
+export default class Data {
     static slides() {
         return [
             new Slide(

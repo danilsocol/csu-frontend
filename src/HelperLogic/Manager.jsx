@@ -1,4 +1,4 @@
-import Mock from '@Helpers/mock';
+import Data from '@helperLogic/staticData.jsx';
 
 export class Manager {
     _mode;
@@ -8,14 +8,13 @@ export class Manager {
 
     get slides() {
         if (this._mode === API_STATUS.DEBUG) {
-            return Mock.slides();
-        } else if (this._mode === API_STATUS.RELEASE) {
+            return Data.slides();
         } else {
-            throw new Error('inccorect mode');
+            return Data.slides();
         }
     }
 }
-export const API_STATUS = {
+export const STATUS = {
     DEBUG: 'debug',
     RELEASE: 'release',
 };
