@@ -5,18 +5,22 @@ import phone from '@Assets/images/phone.png';
 
 const Header = () => {
     return (
-        <header className='header'> 
-            <div className='header-block'>
-                <nav className='menu'>   
-                    <div className='sub-menu left-menu'>
-                        <img className='logo' src = {logo} />
-                        <div className='pipe'/>
-                        <span className='courier-service'>Курьерская служба доставки</span>
+        <header className="header">
+            <div className="header-block">
+                <nav className="menu">
+                    <div className="sub-menu left-menu">
+                        <img className="logo" src={logo} />
+                        <div className="pipe" />
+                        <span className="courier-service">
+                            Курьерская служба доставки
+                        </span>
                     </div>
-                    <div className='sub-menu right-menu'>
-                        <a className='phone-link'>
-                            <img className='phone-img' src={phone}/>
-                            <span className='phone-text'>8 (909) 023-12-51</span>
+                    <div className="sub-menu right-menu">
+                        <a className="phone-link">
+                            <img className="phone-img" src={phone} />
+                            <span className="phone-text">
+                                8 (909) 023-12-51
+                            </span>
                         </a>
                         <button className="log-in-btn">Вход</button>
                     </div>
