@@ -1,20 +1,26 @@
 import React from 'react';
-
-
 import Header from '@Components/Header/header.jsx';
 import Slider from '@Components/Slider/slider.jsx';
+import Service from '@Components/Service/service.jsx';
 import './styles.css';
-import { STATUS, Manager } from '@helperLogic/manager';
+import { STATUS, Manager } from '@Helpers/manager';
 
 const Main = () => {
     const manager = new Manager(STATUS.DEBUG);
     const sliders = manager.slides;
-
-    <div>
-        <Header/>
-        <Slider sliders={sliders} />
-    </div>
-
+    const services = manager.services;
+    return (
+        <div>
+            <div className="container-slider-header">
+                <Header />
+                <Slider sliders={sliders} />
+            </div>
+            <div className="information-block">
+                <h2 className="information-title">5 шагов к заявке</h2>
+                <Service services={services} />
+            </div>
+        </div>
+    );
 };
 
 export default Main;

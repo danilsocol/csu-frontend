@@ -3,3 +3,19 @@
     
 }
 
+.container-slider-header{
+    width: 100%;
+    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+}
+
+.information-block {
+    padding: 96px 135px 144px 135px;
+}
+
+.information-title {
+    text-align: center;
+    color: #2A496B;
+    font-size: 28px;
+    line-height: 34.1px;
+    font-weight: 500;
+}
