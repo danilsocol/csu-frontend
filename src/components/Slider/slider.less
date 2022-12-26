@@ -7,11 +7,19 @@
 
 .slide {
   padding: 0 135px;
+  width: 100%;
   height: 612px;
   display: flex;
   transition: ease-in-out 0.4s;
   position: absolute;
-  transform: translate(-100%);
+  transform: translate(100%);
+  justify-content: space-between;
+
+  .slider-image {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 
   .text-container{
     display: flex;
@@ -21,7 +29,6 @@
     justify-content: center;
 
     .text-title{
-      width: 660px;
       font-weight: 800;
       font-size: 64px;
       line-height: 64px;
@@ -49,6 +56,12 @@
   }
 
 }
+.unboard-slide {
+  padding: 0 0 0 135px;
+  @media only screen and (max-width: 768px) {
+    padding: 0 15px 0 15px;
+  }
+}
 
 .active-anim {
   position: relative;
@@ -56,7 +69,7 @@
 }
 
 .next-slide {
-  transform: translate(100%);
+  transform: translate(-100%);
 }
 
 .container-dots {
