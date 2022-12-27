@@ -3,7 +3,7 @@ import './header.less';
 import logo from '@Assets/images/logo.png';
 import phone from '@Assets/images/phone.png';
 
-const Header = () => {
+const Header = ({ setActive }) => {
     return (
         <header className="header">
             <div className="header-block">
@@ -22,7 +22,12 @@ const Header = () => {
                                 8 (909) 023-12-51
                             </span>
                         </a>
-                        <button className="log-in-btn">Вход</button>
+                        <button
+                            onClick={() => setActive(true)}
+                            className="log-in-btn"
+                        >
+                            Вход
+                        </button>
                     </div>
                 </nav>
             </div>
