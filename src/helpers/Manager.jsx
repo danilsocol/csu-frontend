@@ -9,18 +9,15 @@ export class Manager {
     get slides() {
         if (this._mode === STATUS.DEBUG) {
             return Data.slides();
-        } else {
-            return Data.slides();
         }
+        return null;
     }
     get services() {
         if (this._mode === STATUS.DEBUG) {
             return Data.services();
-        } else {
-            return Data.services();
         }
+        return null;
     }
-
 }
 export const STATUS = {
     DEBUG: 'debug',
