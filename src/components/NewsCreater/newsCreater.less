@@ -20,6 +20,19 @@
     color: #000000;
   }
 
+
+  .container-text-area-red{
+    ::placeholder {
+      color: #FF2323;
+    }
+  }
+
+  .container-text-area{
+    ::placeholder {
+      color: #D0C9D6;
+    }
+  }
+
   .text-area{
     margin-top: 74px;
     height: 144px;
@@ -31,7 +44,8 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    color: #D0C9D6;
+
+
     @media only screen and (max-width: 768px) {
       width: 692px;
     }
@@ -40,10 +54,13 @@
     }
   }
 
-  .container-add-img {
 
+  .container-add-img {
+    display: flex;
     margin-top: 30px;
-    height: 34px;
+    @media only screen and (max-width: 384px) {
+      display: block;
+    }
 
    .input{
      vertical-align: middle;
@@ -102,10 +119,17 @@
       margin-left: 60px;
       width: 34px;
       height: 34px;
+      @media only screen and (max-width: 384px) {
+        margin-left: 0px;
+      }
     }
 
     .added-text{
       margin-left: 35px;
+      @media only screen and (max-width: 384px) {
+        width: 260px;
+        overflow: hidden;
+      }
     }
 
     .close-btn-null {
@@ -133,4 +157,29 @@
     line-height: 22px;
     border: none;
   }
+}
+
+.container-error-text-none{
+  display: none;
+}
+
+.container-error-text{
+  display: block;
+}
+
+.error{
+  color: #FF2323;
+}
+
+.container-added-img{
+  @media only screen and (max-width: 384px) {
+    margin-top: 25px;
+  }
+
+}
+
+.limit-text{
+  margin-top: 6px;
+  display: flex;
+  justify-content: end;
 }
